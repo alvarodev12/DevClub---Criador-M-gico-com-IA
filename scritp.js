@@ -1,4 +1,4 @@
-let webhook = "https://alvarodev12.app.n8n.cloud/webhook-test/animacao-css";
+let webhook = "https://alvarodev12.app.n8n.cloud/webhook/animacao-css";
 
 async function cliqueiNoBotao() {
   let textoInput = document.querySelector(".input-animacao").value;
@@ -20,3 +20,5 @@ async function cliqueiNoBotao() {
 
   document.head.insertAdjacentHTML("beforeend", `<style>${info.style}</style>`);
 }
+
+// ("beforeend", "<style>"+ info.style +"</style>")
