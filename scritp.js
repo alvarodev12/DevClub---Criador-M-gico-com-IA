@@ -1,7 +1,17 @@
-function clickCreateAnimation() {
-  let inputAnimation = document.querySelector("input-animation").value;
-  let button = document.querySelector(".put-magic");
-  button.disabled = true;
+let webhook = "https://alvarodev12.app.n8n.cloud/webhook-test/animacao-css";
 
-  console.log(inputAnimation);
+async function cliqueiNoBotao() {
+  let textoInput = document.querySelector(".input-animacao").value;
+
+  let resposta = await fetch(webhook, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pergunta: textoInput }),
+  });
+
+  let resultado = await resposta.json();
+
+  let info = JSON.parse(resultado.resposta);
+
+  console.log(info);
 }

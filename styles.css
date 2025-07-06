@@ -39,7 +39,7 @@ main {
     height: 400px;
 }
 
-.area-code {
+.area-codigo {
     background: #051626;
     border-radius: 8px;
     padding: 20px;
@@ -48,7 +48,7 @@ main {
     font-size: 14px;
 }
 
-.area-result {
+.area-resultado {
     background: #F8F9FA;
     border-radius: 8px;
     display: flex;
